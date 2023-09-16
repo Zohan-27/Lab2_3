@@ -46,15 +46,6 @@ class Visualization {
         this.isInteractive = isInteractive;
     }
 
-    public void resize(int newWidth, int newHeight) {
-        this.width = newWidth;
-        this.height = newHeight;
-    }
-
-    public void changeBackgroundColor(String newColor) {
-        this.backgroundColor = newColor;
-    }
-
     public void displayInfo() {
         System.out.println("Визуализация:");
         System.out.println("Ширина: " + width);
@@ -98,14 +89,6 @@ class VisualizationFrame {
 
     public void setZIndex(int zIndex) {
         this.zIndex = zIndex;
-    }
-
-    public void changeFrameType(String newFrameType) {
-        this.frameType = newFrameType;
-    }
-
-    public void toggleResizable() {
-        this.isResizable = !this.isResizable;
     }
 
     public void increaseZIndex() {
@@ -154,14 +137,6 @@ class VisualizationLayer {
 
     public void setVisible(boolean visible) {
         isVisible = visible;
-    }
-
-    public void changeOpacity(int newOpacity) {
-        this.opacity = newOpacity;
-    }
-
-    public void toggleVisibility() {
-        this.isVisible = !this.isVisible;
     }
 
     public void displayInfo() {
